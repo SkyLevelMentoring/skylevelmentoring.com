@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkyLevel Mentoring | Elevate Your Aviation Career</title>
-    <!-- Tailwind CSS for styling -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans">
 
-    <!-- Header / Nav -->
+    <!-- Navigation -->
     <nav class="p-6 border-b border-slate-800 flex justify-between items-center max-w-7xl mx-auto">
         <h1 class="text-xl font-bold tracking-wider text-amber-400 uppercase">SkyLevel Mentoring</h1>
-        <a href="#services" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-lg transition">Book Session</a>
+        <a href="https://cal.com/skylevelmentoring" target="_blank" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-lg transition">Book Session</a>
     </nav>
 
     <!-- Hero Section -->
@@ -23,27 +23,57 @@
        
         <div class="flex justify-center gap-4 flex-col sm:flex-row">
             <a href="#services" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg transition">Explore Services</a>
-            <a href="#guide" class="border border-slate-700 hover:bg-slate-900 text-white font-bold px-8 py-4 rounded-xl transition">Get Career Guide</a>
+            <a href="https://skymentor1.gumroad.com/l/peyfpi" target="_blank" class="border border-slate-700 hover:bg-slate-900 text-white font-bold px-8 py-4 rounded-xl transition">Get Career Guide</a>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-16 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-        <!-- Mentoring Card -->
-        <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
-            <h3 class="text-2xl font-bold text-amber-400 mb-3">1-on-1 Strategy Session</h3>
-            <p class="text-slate-400 mb-6">A deep dive into your profile, resume, networking strategy, and personal roadmap into private flight operations.</p>
-            <p class="text-3xl font-extrabold text-white mb-6">$150 <span class="text-sm font-normal text-slate-400">/ 60 mins</span></p>
-            <a href="YOUR_CALENDLY_OR_STRIPE_LINK" target="_blank" class="block text-center bg-amber-500 text-slate-950 font-bold py-3 rounded-lg hover:bg-amber-400 transition">Schedule Consultation</a>
+    <section id="services" class="py-16 px-6 max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+       
+        <!-- 1. Free Intro Call Card -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between">
+            <div>
+                <span class="bg-emerald-500/10 text-emerald-400 text-xs font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Free Intro</span>
+                <h3 class="text-xl font-bold text-amber-400 mt-3 mb-2">Discovery Call</h3>
+                <p class="text-slate-400 text-sm mb-4">A quick 10-15 minute chat to discuss your background, goals, and see if we're a good fit to work together.</p>
+                <p class="text-2xl font-extrabold text-white mb-6">FREE <span class="text-xs font-normal text-slate-400">/ 10-15 mins</span></p>
+            </div>
+            <a href="https://cal.com/skylevelmentoring" target="_blank" class="block text-center border border-slate-700 text-white hover:bg-slate-800 font-bold py-3 rounded-lg transition text-sm">Schedule Free Call</a>
         </div>
 
-        <!-- Digital Guide Card -->
-        <div id="guide" class="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
-            <h3 class="text-2xl font-bold text-amber-400 mb-3">The Private Aviation Playbook</h3>
-            <p class="text-slate-400 mb-6">The step-by-step roadmap covering industry standards, key contacts, resume templates, and negotiation tactics.</p>
-            <p class="text-3xl font-extrabold text-white mb-6">$29 <span class="text-sm font-normal text-slate-400">Instant PDF Access</span></p>
-            <a href="YOUR_GUMROAD_PRODUCT_LINK" target="_blank" class="block text-center border border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-slate-950 font-bold py-3 rounded-lg transition">Download Guide</a>
+        <!-- 2. Single Mentoring Card -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between">
+            <div>
+                <h3 class="text-xl font-bold text-amber-400 mb-2">1-on-1 Strategy</h3>
+                <p class="text-slate-400 text-sm mb-4">A deep dive into your profile, resume, networking strategy, and personal roadmap into private flight operations.</p>
+                <p class="text-2xl font-extrabold text-white mb-6">$150 <span class="text-xs font-normal text-slate-400">/ 60 mins</span></p>
+            </div>
+            <a href="https://cal.com/skylevelmentoring" target="_blank" class="block text-center bg-amber-500 text-slate-950 font-bold py-3 rounded-lg hover:bg-amber-400 transition text-sm">Book Session</a>
         </div>
+
+        <!-- 3. 5-Session Package Card (Best Value) -->
+        <div class="bg-slate-900 border-2 border-amber-500/50 p-6 rounded-2xl relative shadow-xl flex flex-col justify-between">
+            <div>
+                <span class="absolute -top-3 right-4 bg-amber-500 text-slate-950 text-xs font-black uppercase px-2.5 py-0.5 rounded-full">Best Value</span>
+                <h3 class="text-xl font-bold text-amber-400 mb-2">5-Session Bundle</h3>
+                <p class="text-slate-400 text-sm mb-4">Complete career transformation. Five 60-min sessions covering positioning, resume, networking, and execution.</p>
+                <p class="text-2xl font-extrabold text-white mb-6">€500 <span class="text-xs font-normal text-slate-400">/ (€100/ea)</span></p>
+            </div>
+            <!-- Connected to your Stripe Link -->
+            <a href="https://dashboard.stripe.com/acct_1U3x0VFdPdIomTE8/test/payment-links/plink_1U3yKDFdPdIomTE8O3Nz7vzb" target="_blank" class="block text-center bg-amber-500 text-slate-950 font-bold py-3 rounded-lg hover:bg-amber-400 transition text-sm">Get Started</a>
+        </div>
+
+        <!-- 4. Digital Guide Card -->
+        <div id="guide" class="bg-slate-900 border border-slate-800 p-6 rounded-2xl flex flex-col justify-between">
+            <div>
+                <h3 class="text-xl font-bold text-amber-400 mb-2">Aviation Playbook</h3>
+                <p class="text-slate-400 text-sm mb-4">Step-by-step roadmap covering industry standards, key contacts, resume templates, and negotiation tactics.</p>
+                <p class="text-2xl font-extrabold text-white mb-6">$29 <span class="text-xs font-normal text-slate-400">Instant PDF</span></p>
+            </div>
+            <!-- Connected to your Gumroad Link -->
+            <a href="https://skymentor1.gumroad.com/l/peyfpi" target="_blank" class="block text-center border border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-slate-950 font-bold py-3 rounded-lg transition text-sm">Download Guide</a>
+        </div>
+
     </section>
 
     <!-- Footer -->
