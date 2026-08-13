@@ -21,7 +21,7 @@
                 scroll-snap-type: x mandatory;
                 gap: 1.5rem;
                 padding-top: 1.5rem;
-                padding-bottom: 1.5rem;
+                padding-bottom: 2.5rem;
                 justify-content: flex-start;
                 scrollbar-width: thin;
                 scrollbar-color: rgba(245, 158, 11, 0.4) rgba(2, 6, 23, 0.5);
@@ -51,6 +51,7 @@
                 grid-template-columns: repeat(4, minmax(0, 1fr));
                 gap: 1.5rem;
                 padding-top: 0;
+                padding-bottom: 0;
             }
             .responsive-card-item {
                 width: 100%;
@@ -122,7 +123,7 @@
             
             <div class="p-6 rounded-2xl bg-slate-900/30 border border-slate-800/50 flex flex-col items-center justify-center w-full space-y-2 mx-auto">
                 <p class="text-3xl font-black text-amber-400">100%</p>
-                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold whitespace-nowrap">Private Aviation Focus</p>
+                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold whitespace-nowrap">Aviation Focus</p>
             </div>
             
             <div class="p-6 rounded-2xl bg-slate-900/30 border border-slate-800/50 flex flex-col items-center justify-center w-full space-y-2 mx-auto">
@@ -137,7 +138,7 @@
             
             <div class="p-6 rounded-2xl bg-slate-900/30 border border-slate-800/50 flex flex-col items-center justify-center w-full space-y-2 mx-auto">
                 <p class="text-3xl font-black text-white">High-Ticket</p>
-                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold whitespace-nowrap">Operations Positioning</p>
+                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold whitespace-nowrap">Career Growth</p>
             </div>
 
         </div>
@@ -149,10 +150,10 @@
         
         <div class="max-w-7xl w-full mx-auto flex flex-col items-center justify-center">
             
-            <div class="text-center max-w-2xl mx-auto mb-20 flex flex-col items-center justify-center w-full space-y-3 px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center justify-center w-full space-y-3 px-4">
                 <p class="text-3xl md:text-5xl font-extrabold text-white text-center">Select Your Path Forward</p>
                 
-                <!-- Hidden on desktop, only visible on mobile/tablet. Wrapped safely so text won't truncate/clip -->
+                <!-- Hidden on desktop, only visible on mobile/tablet -->
                 <div class="flex flex-col items-center justify-center gap-2 pt-2 mx-auto xl:hidden w-full max-w-xs">
                     <span class="text-xs font-bold text-amber-400 uppercase tracking-wider text-center leading-normal">Tailored Offerings &bull; (Swipe to browse options)</span>
                     <i data-lucide="chevron-down" class="w-4 h-4 text-amber-400"></i>
@@ -343,6 +344,8 @@
 </body>
 
 </html>
+
+
 
 
 
