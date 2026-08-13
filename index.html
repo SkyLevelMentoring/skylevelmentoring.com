@@ -9,24 +9,24 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-950 flex flex-col min-h-screen">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-950 m-0 p-0 w-full min-h-screen flex flex-col items-center justify-start box-border">
 
     <!-- Navigation -->
-    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 px-6 py-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/90 border-b border-slate-800/80 w-full px-6 py-4 flex justify-center">
+        <div class="max-w-7xl w-full flex justify-between items-center mx-auto">
             <div class="flex items-center gap-2">
                 <i data-lucide="plane" class="w-6 h-6 text-amber-400"></i>
                 <h1 class="text-xl font-extrabold tracking-wider text-amber-400 uppercase">SkyLevel Mentoring</h1>
             </div>
-            <a href="https://cal.com/skylevelmentoring" target="_blank" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl shadow-md hover:shadow-amber-500/20 transition-all duration-200 text-sm flex items-center gap-2">
+            <a href="https://cal.com/skylevelmentoring/15min" target="_blank" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl shadow-md hover:shadow-amber-500/20 transition-all duration-200 text-sm flex items-center gap-2">
                 <i data-lucide="calendar" class="w-4 h-4"></i> Book Session
             </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative bg-cover bg-center py-32 md:py-40 px-6 text-center border-b border-slate-800 flex items-center justify-center" style="background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0.82), rgba(2, 6, 23, 0.95)), url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1920&q=80');">
-        <div class="max-w-4xl mx-auto flex flex-col items-center">
+    <section class="relative bg-cover bg-center py-36 md:py-48 px-6 text-center border-b border-slate-800 w-full flex flex-col items-center justify-center" style="background-image: linear-gradient(to bottom, rgba(2, 6, 23, 0.85), rgba(2, 6, 23, 0.96)), url('https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1920&q=80');">
+        <div class="max-w-4xl mx-auto flex flex-col items-center w-full">
             <span class="inline-flex items-center gap-2 bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
                 <i data-lucide="shield-check" class="w-4 h-4"></i> Private Aviation Mentorship
             </span>
@@ -50,8 +50,8 @@
     </section>
 
     <!-- Stats / Trust Bar -->
-    <section class="border-b border-slate-800/80 bg-slate-900/40 py-8 px-6">
-        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    <section class="border-b border-slate-800/80 bg-slate-900/40 py-8 px-6 w-full flex justify-center">
+        <div class="max-w-6xl w-full grid grid-cols-2 md:grid-cols-4 gap-6 text-center mx-auto">
             <div class="p-4 rounded-xl bg-slate-900/30 border border-slate-800/50 flex flex-col items-center justify-center">
                 <p class="text-3xl font-black text-amber-400">100%</p>
                 <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold mt-1">Private Aviation Focus</p>
@@ -72,42 +72,43 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-24 px-6 max-w-7xl mx-auto w-full">
-        <div class="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center">
+    <section id="services" class="py-24 px-6 max-w-7xl w-full mx-auto flex flex-col items-center">
+        <div class="text-center max-w-2xl mx-auto mb-16 flex flex-col items-center w-full">
             <p class="text-3xl md:text-4xl font-extrabold text-white mb-3">Select Your Path Forward</p>
-            <!-- Header text first, symbol/icon underneath -->
             <div class="flex flex-col items-center gap-1">
                 <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Tailored Offerings</span>
                 <i data-lucide="chevron-down" class="w-4 h-4 text-amber-400"></i>
             </div>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl w-full mx-auto">
             
             <!-- 1. Free Intro Call Card -->
             <div class="bg-slate-900/80 border border-slate-800 hover:border-slate-700 p-6 rounded-2xl flex flex-col justify-between hover:shadow-xl hover:shadow-slate-900/50 transition-all duration-300">
                 <div>
-                    <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-flex items-center gap-1 mb-4">
-                        <i data-lucide="sparkles" class="w-3 h-3"></i> Free Intro
-                    </span>
+                    <div class="flex flex-col items-start gap-1 mb-4">
+                        <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Free Intro</span>
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
+                    </div>
                     <h3 class="text-xl font-bold text-amber-400 mb-2">Discovery Call</h3>
                     <p class="text-slate-400 text-sm mb-6 leading-relaxed">A quick 10-15 minute session to discuss your background, long-term goals, and ensure we're the perfect fit.</p>
                     <p class="text-3xl font-black text-white mb-6">FREE <span class="text-xs font-normal text-slate-400">/ 10-15 mins</span></p>
                 </div>
-                <a href="https://cal.com/skylevelmentoring" target="_blank" class="block text-center border border-slate-700 text-white hover:bg-slate-800 font-bold py-3.5 rounded-xl transition-all duration-200 text-sm">Schedule Free Call</a>
+                <a href="https://cal.com/skylevelmentoring/15min" target="_blank" class="block text-center border border-slate-700 text-white hover:bg-slate-800 font-bold py-3.5 rounded-xl transition-all duration-200 text-sm">Schedule Free Call</a>
             </div>
 
             <!-- 2. Single Mentoring Card -->
             <div class="bg-slate-900/80 border border-slate-800 hover:border-slate-700 p-6 rounded-2xl flex flex-col justify-between hover:shadow-xl hover:shadow-slate-900/50 transition-all duration-300">
                 <div>
-                    <span class="bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-flex items-center gap-1 mb-4">
-                        <i data-lucide="user" class="w-3 h-3"></i> 1-on-1
-                    </span>
+                    <div class="flex flex-col items-start gap-1 mb-4">
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">1-on-1 Strategy</span>
+                        <i data-lucide="user" class="w-3.5 h-3.5 text-amber-400"></i>
+                    </div>
                     <h3 class="text-xl font-bold text-amber-400 mb-2">1-on-1 Strategy</h3>
                     <p class="text-slate-400 text-sm mb-6 leading-relaxed">A deep dive into your profile, resume reframing, high-net-worth networking tactics, and personal roadmap.</p>
                     <p class="text-3xl font-black text-white mb-6">$150 <span class="text-xs font-normal text-slate-400">/ 60 mins</span></p>
                 </div>
-                <a href="https://cal.com/skylevelmentoring" target="_blank" class="block text-center bg-amber-500 text-slate-950 font-bold py-3.5 rounded-xl hover:bg-amber-400 transition-all duration-200 text-sm shadow-md hover:shadow-amber-500/10">Book Session</a>
+                <a href="https://cal.com/skylevelmentoring/1-on-1-strategy-session" target="_blank" class="block text-center bg-amber-500 text-slate-950 font-bold py-3.5 rounded-xl hover:bg-amber-400 transition-all duration-200 text-sm shadow-md hover:shadow-amber-500/10">Book Session</a>
             </div>
 
             <!-- 3. 5-Session Package Card (Best Value) -->
@@ -116,22 +117,24 @@
                     <span class="absolute -top-3.5 right-4 bg-amber-500 text-slate-950 text-xs font-black uppercase px-3 py-1 rounded-full shadow-md flex items-center gap-1">
                         <i data-lucide="star" class="w-3 h-3 fill-slate-950"></i> Best Value
                     </span>
-                    <span class="bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-flex items-center gap-1 mb-4">
-                        <i data-lucide="award" class="w-3 h-3"></i> Bundle + Network
-                    </span>
+                    <div class="flex flex-col items-start gap-1 mb-4">
+                        <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">Bundle + Network</span>
+                        <i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i>
+                    </div>
                     <h3 class="text-xl font-bold text-amber-400 mb-2">5-Session Bundle</h3>
                     <p class="text-slate-400 text-sm mb-4 leading-relaxed">Complete career transformation. Five intensive sessions covering positioning, interview prep, and direct resume sharing to industry contacts (Note: does not guarantee employment).</p>
                     <p class="text-3xl font-black text-white mb-6">€500 <span class="text-xs font-normal text-slate-400">/ (€100/ea)</span></p>
                 </div>
-                <a href="https://dashboard.stripe.com/acct_1U3x0VFdPdIomTE8/test/payment-links/plink_1U3yKDFdPdIomTE8O3Nz7vzb" target="_blank" class="block text-center bg-amber-500 text-slate-950 font-bold py-3.5 rounded-xl hover:bg-amber-400 transition-all duration-200 text-sm shadow-lg shadow-amber-500/10">Get Started</a>
+                <a href="https://cal.com/skylevelmentoring/1-on-1-strategy-session-package-5-mentoring-sessions" target="_blank" class="block text-center bg-amber-500 text-slate-950 font-bold py-3.5 rounded-xl hover:bg-amber-400 transition-all duration-200 text-sm shadow-lg shadow-amber-500/10">Get Started</a>
             </div>
 
             <!-- 4. Digital Guide Card -->
             <div id="guide" class="bg-slate-900/80 border border-slate-800 hover:border-slate-700 p-6 rounded-2xl flex flex-col justify-between hover:shadow-xl hover:shadow-slate-900/50 transition-all duration-300">
                 <div>
-                    <span class="bg-slate-800 text-slate-300 border border-slate-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-flex items-center gap-1 mb-4">
-                        <i data-lucide="file-text" class="w-3 h-3"></i> Digital Guide
-                    </span>
+                    <div class="flex flex-col items-start gap-1 mb-4">
+                        <span class="text-xs font-bold text-slate-300 uppercase tracking-wider">Digital Guide</span>
+                        <i data-lucide="file-text" class="w-3.5 h-3.5 text-slate-300"></i>
+                    </div>
                     <h3 class="text-xl font-bold text-amber-400 mb-2">Aviation Playbook</h3>
                     <p class="text-slate-400 text-sm mb-6 leading-relaxed">Step-by-step PDF roadmap covering operational standards, key contact strategies, resume templates, and salary negotiations.</p>
                     <p class="text-3xl font-black text-white mb-6">$29 <span class="text-xs font-normal text-slate-400">Instant PDF</span></p>
@@ -143,14 +146,13 @@
     </section>
 
     <!-- About / Meet Your Mentor Section -->
-    <section class="py-20 px-6 border-t border-slate-800/80 bg-slate-900/20 w-full">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            <div class="relative flex justify-center">
+    <section class="py-20 px-6 border-t border-slate-800/80 bg-slate-900/20 w-full flex justify-center">
+        <div class="max-w-5xl w-full mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative flex justify-center w-full">
                 <div class="absolute -inset-1 bg-gradient-to-r from-amber-500 to-amber-700 rounded-2xl blur opacity-20"></div>
                 <img src="Mentor.jpg.jpeg" alt="Julia - SkyLevel Mentor" class="relative rounded-2xl border border-slate-800 object-cover object-top w-full max-w-md h-[480px] shadow-2xl">
             </div>
-            <div class="flex flex-col items-start">
-                <!-- Header text first, symbol/icon underneath -->
+            <div class="flex flex-col items-start w-full">
                 <div class="flex flex-col items-start gap-1 mb-3">
                     <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">About Your Mentor</span>
                     <i data-lucide="compass" class="w-4 h-4 text-amber-400"></i>
@@ -174,12 +176,14 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-10 border-t border-slate-800/80 text-slate-500 text-sm bg-slate-950 mt-auto">
-        <div class="flex justify-center items-center gap-2 mb-2">
-            <i data-lucide="plane" class="w-4 h-4 text-amber-400"></i>
-            <span class="font-bold text-slate-300">SkyLevel Mentoring</span>
+    <footer class="text-center py-10 border-t border-slate-800/80 text-slate-500 text-sm bg-slate-950 w-full mt-auto flex justify-center">
+        <div class="max-w-7xl w-full mx-auto flex flex-col items-center justify-center">
+            <div class="flex justify-center items-center gap-2 mb-2">
+                <i data-lucide="plane" class="w-4 h-4 text-amber-400"></i>
+                <span class="font-bold text-slate-300">SkyLevel Mentoring</span>
+            </div>
+            <p>&copy; 2026 SkyLevel Mentoring. All rights reserved.</p>
         </div>
-        <p>&copy; 2026 SkyLevel Mentoring. All rights reserved.</p>
     </footer>
 
     <!-- Initialize Lucide Icons -->
